@@ -1,6 +1,9 @@
 import express from 'express'
-import Router from 'express'
 
-const routes = Router()
+const routes = express.Router()
 
-routes.get('/users')
+routes.get('/', (req, res) => {
+  res.send('OIOIOIOIOIOI')
+})
+
+export default routes
